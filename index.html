@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miller-Rabin Primality Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Miller-Rabin Primality Test</h1>
+        <form>
+            <label>Check if number is prime: </label>
+            <input type="number" id="numberToCheck">
+            <input type="submit" value="Check" onclick="displayResult(document.getElementById('numberToCheck').value, event);">
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="miller-rabin-primality-test.js"></script>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        .wrapper {
+            margin-top: 2%;
+            text-align: center;
+        }
+        #result {
+            margin-top: 5%;
+            font-size: 2em;
+        }
+    </style>
+</body>
+</html>
